@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* .post-list{
+  height: 500px;
+  width: 1500px;
+  border: 1px solid black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.post-wrapper{
+  height: auto;
+  width: 1450px;
+  border: 1px solid black;
+}
+.post-avatar{
+  height: 70px;
+  width: 70px;
+  border: 1px solid black;
+  position: relative;
+  left:1%;
+  top:10%;
+  border-radius: 50%;
+}
+
+.post-heading-content{
+  height: 70px;
+  width: 900px;
+  border: 1px solid black;
+  margin-left: 50px;
+}
+
+.post-heading-content .post-time{
+  position: relative;
+  left:1%;
+}
+.post-heading{
+  height: 100px;
+  width: 1450px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  display: inline-flex;
+}
+.post-content{
+  height: 380px;
+  width: 1450px;
+  border: 1px dashed black;
+} */
