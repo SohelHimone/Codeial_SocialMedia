@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/codeial/static/css/main.b27eb15a.css",
+    "main.js": "/codeial/static/js/main.dfe128b7.js",
+    "index.html": "/codeial/index.html",
+    "main.b27eb15a.css.map": "/codeial/static/css/main.b27eb15a.css.map",
+    "main.dfe128b7.js.map": "/codeial/static/js/main.dfe128b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b27eb15a.css",
+    "static/js/main.dfe128b7.js"
+  ]
+}
