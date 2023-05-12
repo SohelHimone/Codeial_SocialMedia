@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {useAuth} from '../hooks'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import styles from '../style/settings.module.css';
 
 const Settings=()=>{
     const auth=useAuth();
@@ -53,19 +54,19 @@ const Settings=()=>{
     }
 
    return (
-    <div style={styles.SettingForm}>
-        <div style={styles.SignupHeader}>
+    <div className={styles.SettingForm}>
+        <div className={styles.SignupHeader}>
         <span>Update Profile</span>
         </div>
         
-        <div style={styles.SettingFeild}>
-           <div style={styles.label}>Email</div>
-           <div style={styles.SettingFeild}>{auth.user?.email}</div>
+        <div className={styles.SettingFeild}>
+           <div  className={styles.SettingFeild}>Email</div>
+           <div className={styles.label}>{auth.user?.email}</div>
         </div>
-        <div style={styles.SettingFeild}>
-            <div style={styles.label}>Name</div>
+        <div className={styles.SettingFeild}>
+            <div  className={styles.label}>Name</div>
             {editmode ?(
-             <input style={styles.input} type='text'
+             <input className={styles.input} type='text'
              value={name}
              onChange={(e)=>setName(e.target.value)}/>
             ):(
@@ -76,35 +77,35 @@ const Settings=()=>{
 
         {editmode && (
             <>
-            <div style={styles.SettingFeild}>
-                <div style={styles.label}>Password</div>
-              <input style={styles.input} type='Password'
+            <div className={styles.SettingFeild}>
+                <div  className={styles.label}>Password</div>
+              <input className={styles.input} type='Password'
               value={password}
               onChange={(e)=>setPassword(e.target.value)}/>
             </div>
-            <div style={styles.SettingFeild}>
-                <div style={styles.label}>confirm Password</div>
-              <input style={styles.input} type='Password'
+            <div className={styles.SettingFeild}>
+                <div  className={styles.label}>confirm Password</div>
+              <input className={styles.input} type='Password'
               value={confirmPassword}
               onChange={(e)=>setConfirmPassword(e.target.value)}/>
             </div>
             </>
         )}
-        <div style={styles.SettingFeild}>
+        <div className={styles.SettingFeild}>
             {editmode?(
                 <>
-                  <button style={styles.EditBtn} 
+                  <button className={styles.EditBtn}
                   onClick={updateprofile}>
                     {savingForm?'Saving Profile ...':'Save Profile'}
                     </button>
-                    <button style={styles.EditBtn} 
+                    <button className={styles.EditBtn}
                       onClick={()=>setEditmode(false)}>
                     Go back
                     </button>
                 </>
               
             ):(
-                <button style={styles.EditBtn}
+                <button className={styles.EditBtn}
                 onClick={()=>setEditmode(true)}>
                     Edit Profile
                 </button>
@@ -114,59 +115,6 @@ const Settings=()=>{
     </div>
    )
 
-}
-
-
-const styles={
-    SettingForm:{
-        width:"30%",
-        height:'auto',
-        display:'block',
-        flexDirection:'column',
-        margin: "0 auto",
-        marginTop: "50px",
-        backgroundColor:'white',
-        border:'1px solid black',
-        // margin:'40px auto',
-        padding:20
-    },
-    SignupHeader:{
-       fontSize:30,
-       fontWeight:600,
-       color:'orange',
-       textAlign:'center'
-    },
-    input:{
-      width:'100%',
-      height: 30,
-      padding:5,
-      fontSize:15
-    },
-    SettingFeild:{
-        width:400,
-        display:'block',
-        flexDirection:'column',
-        justifyContent:'center',
-        alignItems:'center',
-            
-    },
-    EditBtn:{
-        width:'25%',
-        height:40,
-        display:'block',
-        flexDirection:'row',
-        border:'1px solid black',
-        backgroundColor:'orange',
-        marginTop:30,
-        cursor:'pointer'
-    },
-    label:{
-        fontStyle: "normal",
-        fontWeight: 600,
-        fontSize: 16,
-        color:" #9e9e9e",
-        padding: "5px 0"
-    }
 }
 
 

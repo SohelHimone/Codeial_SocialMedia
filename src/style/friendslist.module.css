@@ -1,0 +1,106 @@
+.friendList {
+    background: #fff;
+    margin-left: 50px;
+    flex-grow: 0.2;
+    height: 50vh;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow-y: scroll;
+  }
+  
+  .friendHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+  
+  .noFriends {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .friendItems {
+    display: flex;
+    padding: 5px 10px;
+    color: #616161;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+  }
+  
+  .imagediv {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .friendsName {
+    padding: 0 10px;
+  }
+  
+
+
+  @media (max-width:768px){
+    .friendList {
+        background: #fff;
+        margin-left: 20px;
+        flex-grow: 0.1;
+        height: 30vh;
+        box-sizing: border-box;
+        margin-top: 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 2px;
+        overflow-y: scroll;
+      }
+      
+      .friendHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+      }
+      
+      .noFriends {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+      }
+      
+      .friendItems {
+        display: flex;
+        padding: 3px 5px;
+        color: #616161;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 10px;
+        text-decoration: none;
+      }
+      
+      .imagediv {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
+      
+      .image {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .friendsName {
+        padding: 0 5px;
+      }
+      
+  }

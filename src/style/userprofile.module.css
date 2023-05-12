@@ -1,0 +1,114 @@
+.UserProfileform {
+    width: 450px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .imagediv {
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+  }
+  
+  .images {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .SignupHeader {
+    font-size: 25px;
+    font-weight: 600;
+    color: orange;
+  }
+  
+  .input {
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 15px;
+  }
+  
+  .SignUpFeild {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .SignUpBtn {
+    width: 25%;
+    height: 40px;
+    border: 1px solid black;
+    background-color: violet;
+    margin-top: 30px;
+    border-radius: 20px;
+  }
+
+  @media (max-width:768px){
+    .UserProfileform {
+        width: 220px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
+        margin: 20px auto;
+        padding: 10px;
+      }
+      
+      .imagediv {
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+      }
+      
+      .images {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .SignupHeader {
+        font-size: 15px;
+        font-weight: 300;
+        color: orange;
+      }
+      
+      .input {
+        width: 100%;
+        height: 20px;
+        margin-top: 15px;
+        padding: 3px;
+        font-size: 7px;
+      }
+      
+      .SignUpFeild {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+      }
+      
+      .SignUpBtn {
+        width: auto;
+        height: auto;
+        border: 1px solid black;
+        background-color: violet;
+        margin-top: 20px;
+        border-radius: 20px;
+      }
+  }
+  

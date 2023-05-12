@@ -4,7 +4,7 @@ import { RemoveFreind, UserInfo, addFreind } from "../api";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useAuth } from "../hooks";
-
+import styles from '../style/userprofile.module.css';
 
 
 
@@ -99,28 +99,28 @@ const UserProfile=()=>{
 
 
     return(
-        <div style={styles.UserProfileform} >
-             <span style={styles.SignupHeader}>User Profile</span>
-             <div style={styles.imagediv}>
-             <img style={styles.images} src="https://cdn-icons-png.flaticon.com/512/236/236832.png" alt='avatarlogo'/>
+        <div className={styles.UserProfileform} >
+             <span className={styles.SignupHeader}>User Profile</span>
+             <div className={styles.imagediv}>
+             <img className={styles.images} src="https://cdn-icons-png.flaticon.com/512/236/236832.png" alt='avatarlogo'/>
              </div>
              
-            <div style={styles.SignUpFeild}>
+            <div className={styles.SignUpFeild}>
                 <div>Email:{user?.email}</div>
             </div>
-            <div style={styles.SignUpFeild}>
+            <div className={styles.SignUpFeild}>
              <div>Name:{user?.name}</div>
             </div>
            
-            <div style={styles.SignUpFeild}>
+            <div className={styles.SignUpFeild}>
                {checkUserIsAfriend() ?
-                (<button style={styles.SignUpBtn} 
+                (<button className={styles.SignUpBtn} 
                 onClick={handleRemoveFreind}
                 disabled={requestInprogress}
                 >
                     {requestInprogress?'Removing friend...':' Remove Friend'}
                 </button>)
-                :(<button style={styles.SignUpBtn} 
+                :(<button className={styles.SignUpBtn} 
                     onClick={handleAddFreind}
                     disabled={requestInprogress}
                 >
@@ -134,60 +134,5 @@ const UserProfile=()=>{
     )
 }
 
-
-
-
-const styles={
-    UserProfileform:{
-        width:450,
-        height:350,
-        display:'flex',
-        flexDirection:'column',
-        justifyContent:'center',
-        alignItems:'center',
-        backgroundColor:'white',
-        border:'1px solid black',
-        margin:'40px auto',
-        padding:20
-    },
-    imagediv:{
-        width:50,
-        height:50,
-        marginTop:25,
-    },
-    images:{
-        width:'100%',
-        height:'100%'
-    },
-    SignupHeader:{
-       fontSize:25,
-       fontWeight:600,
-       color:'orange'
-    },
-    input:{
-      width:'100%',
-      height: 30,
-      marginTop:25,
-      padding:5,
-      fontSize:15
-    },
-    SignUpFeild:{
-        width:400,
-        display:'flex',
-        flexDirection:'column',
-        justifyContent:'center',
-        alignItems:'center',
-        marginTop:5
-            
-    },
-    SignUpBtn:{
-        width:'25%',
-        height:40,
-        border:'1px solid black',
-        backgroundColor:'violet',
-        marginTop:30,
-        borderRadius:20
-    }
-}
 
 export default UserProfile;

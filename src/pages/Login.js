@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useAuth } from "../hooks";//here we use custom hooks so that we can iterate in thier values like login,logout,user,loading which it contains ,more it use for authenicate by those info
 import { Navigate } from "react-router";
+import styles from '../style/login.module.css';
 
 const Login=()=>{
 
@@ -45,12 +46,12 @@ const Login=()=>{
     }
 
     return(
-    <form style={styles.LoginForm} onSubmit={handleSubmit}>
+    <form className={styles.LoginForm} onSubmit={handleSubmit}>
 
-        <span style={styles.loginSignupHeader}>Log In</span>
+        <span className={styles.loginSignupHeader}>Log In</span>
         
-        <div style={styles.LoginFeild}>
-             <input style={styles.input} 
+        <div className={styles.LoginFeild}>
+             <input  className={styles.input} 
              type="email" 
              placeholder="Enter Your Email" 
              value={email}
@@ -58,15 +59,15 @@ const Login=()=>{
              </input>
         </div>
 
-        <div  style={styles.LoginFeild}>
-             <input style={styles.input} 
+        <div className={styles.LoginFeild} >
+             <input className={styles.input}
              type="password" 
              placeholder="Enter Your password" 
              value={password}
              onChange={(e)=>setPassword(e.target.value)}></input>
         </div>
-        <div style={styles.LoginFeild}>
-            <button  disabled={loggin}  style={styles.LoginBtn} >{loggin ? 'Logging In':'Log In' }</button>
+        <div className={styles.LoginFeild} >
+            <button  disabled={loggin}  className={styles.LoginBtn} >{loggin ? 'Logging In':'Log In' }</button>
         </div>
 
   
@@ -76,45 +77,4 @@ const Login=()=>{
 }
 
 
-const styles={
-    LoginForm:{
-        width:450,
-        height:350,
-        display:'flex',
-        flexDirection:'column',
-        justifyContent:'center',
-        alignItems:'center',
-        backgroundColor:'white',
-        border:'1px solid black',
-        margin:'40px auto',
-        padding:20
-    },
-    loginSignupHeader:{
-       fontSize:30,
-       fontWeight:600,
-       color:'orange'
-    },
-    input:{
-      width:'100%',
-      height: 30,
-      marginTop:20,
-      padding:5,
-      fontSize:15
-    },
-    LoginFeild:{
-        width:400,
-        display:'flex',
-        flexDirection:'column',
-        justifyContent:'center',
-        alignItems:'center',
-            
-    },
-    LoginBtn:{
-        width:'100%',
-        height:40,
-        border:'1px solid black',
-        backgroundColor:'orange',
-        marginTop:30,
-    }
-}
 export default Login;

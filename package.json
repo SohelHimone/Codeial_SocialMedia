@@ -1,9 +1,8 @@
 {
-  "name": "codeial_react"
-  ,
+  "name": "codeial_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SohelHimone.github.io/codeial",
+  "homepage": "https://SohelHimone.github.io/Codeial_SocialMedia",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

@@ -1,0 +1,120 @@
+/* SettingForm */
+.SettingForm {
+    width: 30%;
+    height: auto;
+    display: block;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  
+  /* SignupHeader */
+  .SignupHeader {
+    font-size: 30px;
+    font-weight: 600;
+    color: orange;
+    text-align: center;
+  }
+  
+  /* input */
+  .input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+  }
+  
+  /* SettingFeild */
+  .SettingFeild {
+    width: 400px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* EditBtn */
+  .EditBtn {
+    width: 25%;
+    height: 40px;
+    display: block;
+    flex-direction: row;
+    border: 1px solid black;
+    background-color: orange;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+  /* label */
+  .label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #9e9e9e;
+    padding: 5px 0;
+  }
+  
+
+  @media (max-width:768px){
+    .SettingForm {
+      width: auto;
+      height: auto;
+      display: block;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-top: 30px;
+      background-color: white;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    
+    /* SignupHeader */
+    .SignupHeader {
+      font-size: 20px;
+      font-weight: 200;
+      color: orange;
+      text-align: center;
+    }
+    
+    /* input */
+    .input {
+      width: auto;
+      height: 15px;
+      padding: 5px;
+      font-size: 7px;
+    }
+    
+    /* SettingFeild */
+    .SettingFeild {
+      width: auto;
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* EditBtn */
+    .EditBtn {
+      width: auto;
+      height: 20px;
+      display: block;
+      flex-direction: row;
+      border: 1px solid black;
+      background-color: orange;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    
+    /* label */
+    .label {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 8px;
+      color: #9e9e9e;
+      padding: 3px 0;
+    }
+    
+  }

@@ -59,7 +59,7 @@ function App() {
             <Route exact path="/user/:userId" element={
               <PrivateRoute>
                 <UserProfile />
-              </PrivateRoute>}></Route>
+            </PrivateRoute>}></Route>
         <Route exact path="/register" element={<SignUp/>} />
         <Route exact path="/login" element={<Login />} />
         <Route path="" element={<Page404/>}/>
