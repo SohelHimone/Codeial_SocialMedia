@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Codeial_SocialMedia/static/css/main.b27eb15a.css",
-    "main.js": "/Codeial_SocialMedia/static/js/main.dfe128b7.js",
+    "main.css": "/Codeial_SocialMedia/static/css/main.69c01f0b.css",
+    "main.js": "/Codeial_SocialMedia/static/js/main.b901b12d.js",
     "index.html": "/Codeial_SocialMedia/index.html",
-    "main.b27eb15a.css.map": "/Codeial_SocialMedia/static/css/main.b27eb15a.css.map",
-    "main.dfe128b7.js.map": "/Codeial_SocialMedia/static/js/main.dfe128b7.js.map"
+    "main.69c01f0b.css.map": "/Codeial_SocialMedia/static/css/main.69c01f0b.css.map",
+    "main.b901b12d.js.map": "/Codeial_SocialMedia/static/js/main.b901b12d.js.map"
   },
   "entrypoints": [
-    "static/css/main.b27eb15a.css",
-    "static/js/main.dfe128b7.js"
+    "static/css/main.69c01f0b.css",
+    "static/js/main.b901b12d.js"
   ]
 }
