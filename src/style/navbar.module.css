@@ -53,7 +53,7 @@
     max-width: 300px;
     height: auto;
     display: inline-block;
-    border:1px solid black;
+    /* border:1px solid black; */
   }
   .searchContainer {
     /* flex-grow: 0.5; */
