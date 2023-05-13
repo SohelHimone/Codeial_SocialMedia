@@ -68,23 +68,29 @@ const Navbar=()=>{
             {auth.user?(
                 
                 <div className={styles.navLinks}>
-                    <li onClick={auth.logout}>
-                       LOGOUT
-                    </li>
+                     <div className={styles.navbtn}>
+                        <li onClick={auth.logout}>
+                        LOGOUT
+                        </li>
+                    </div>
                     
                 </div>
             ):(
                
                 <div className={styles.rightlist}>
-                    <ul>
-                    <li>
-                        <Link to="/login">Log IN</Link>
-                    </li>
+                
+                    <div className={styles.navbtn}>
+                    
+                        <Link to="/login" className={styles.underline}>Log IN</Link>
+                   
 
-                    <li>
-                        <Link to='/register'>Resgiter In</Link>
-                    </li>
-                    </ul>
+                    </div>
+                   <div className={styles.navbtn}>
+                  
+                        <Link to='/register' className={styles.underline}>Register In</Link>
+                 
+                   </div>
+            
                 </div>
                
 
